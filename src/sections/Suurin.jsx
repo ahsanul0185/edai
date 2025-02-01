@@ -40,7 +40,7 @@ const Suurin = () => {
       </motion.div>
 
       {/* boxes */}
-      <div className="container mt-16 md:mt-28 section-padding flex flex-col lg:flex-row gap-12">
+      <div className=" mt-16 md:mt-28 section-padding flex flex-col lg:flex-row gap-12">
         <BoxSuurin bg_img="/images/box_1.jpg" idx={0}>
           <div>
             <img className="block w-12 sm:w-16 mb-7 sm:mb-10 mt-2" src={logo_model} alt="" />
