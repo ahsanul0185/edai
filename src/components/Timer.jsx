@@ -16,7 +16,10 @@ const Timer = ({ duration }) => {
 
   return (
     <div className="fixed z-50 w-full max-w-[300px] p-5 top-1/2 -translate-y-1/2 right-0 bg-gradient-to-r from-[#FFFFFF66] to-[#9999991A] backdrop-blur-md rounded-md">
-      {time}
+          timer
+      <br />
+          {time}
+          
     </div>
   );
 };

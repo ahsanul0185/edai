@@ -40,7 +40,7 @@ const Suurin = () => {
       </motion.div>
 
       {/* boxes */}
-      <div className=" mt-16 md:mt-28 section-padding flex flex-col lg:flex-row gap-12">
+      <div className="mx-auto mt-16 md:mt-28 section-padding flex flex-col items-center lg:items-stretch lg:flex-row lg:justify-center gap-12">
         <BoxSuurin bg_img="/images/box_1.jpg" idx={0}>
           <div>
             <img className="block w-12 sm:w-16 mb-7 sm:mb-10 mt-2" src={logo_model} alt="" />
@@ -50,7 +50,7 @@ const Suurin = () => {
               avulla tehokkaammin!
             </h2>
 
-            <p className="text-sm sm:text-base font-light leading-6 sm:leading-8">
+            <p className="text-sm sm:text-base  font-light leading-6 sm:leading-8">
               Tarjoamme ainutlaatuisen oppimisalustan, jossa tekoäly vastaa
               kysymyksiisi reaaliajassa ja auttaa sinua ymmärtämään haastavatkin
               aiheet. Saat juuri sinulle räätälöityä tukea pääsykokeisiin – opi
