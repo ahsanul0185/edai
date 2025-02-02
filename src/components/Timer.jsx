@@ -32,7 +32,7 @@ const Timer = ({ duration }) => {
   };
 
   return (
-    <div className="fixed z-50 scale-75 sm:scale-100 py-3 px-2 md:px-3 top-[20%] lg:top-1/2 lg:-translate-y-1/2 -right-7 sm:right-0 bg-gradient-to-r from-[#FFFFFF66] to-[#9999991A] backdrop-blur-md rounded-md">
+    <div className="fixed z-50 scale-75 sm:scale-100 py-3 px-2 md:px-3 top-[20%] lg:top-[30%] -right-7 sm:right-0 bg-gradient-to-r from-[#FFFFFF66] to-[#9999991A] backdrop-blur-md rounded-md">
       <span className="hidden">
         {getFormattedTime(time).days < 9
           ? "0" + getFormattedTime(time).days
