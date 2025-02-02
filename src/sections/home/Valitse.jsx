@@ -21,7 +21,7 @@ const Valitse = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.4, ease: "easeIn" }}
         viewport={{once : true, amount : 0.3}}
-        className=" z-10 max-w-[1350px] mx-auto section-padding"
+        className="z-10 max-w-[1350px] mx-auto section-padding"
       >
         <h2 className="sm:text-xl md:text-2xl font-bold mb-3">
           Valitse rehellinen ja tulosta tekevä kurssijärjestäjä joka tukee

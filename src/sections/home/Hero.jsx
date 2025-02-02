@@ -10,10 +10,10 @@ const Hero = () => {
       className={`relative min-h-[70vh] md:min-h-screen md:bg-[url(/images/img_hero.jpg)] md:bg-fixed bg-no-repeat bg-cover bg-center flex items-end`}
     >
       {/* dark overlay */}
-      <div className="md:hidden absolute inset-0 overflow-x-hidden">
+      <div className="md:hidden absolute w-full h-full overflow-x-hidden">
         <img
           src="/images/img_hero.jpg"
-          className="block h-full min-w-fit -translate-x-[40%] object-fit"
+          className="block h-full w-full object-cover"
         />
       </div>
       <div className="absolute inset-0 bg-black/50" />

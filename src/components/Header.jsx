@@ -30,7 +30,6 @@ const Header = () => {
       <div
         className="flex items-center gap-5"
       >
-     
           <button onClick={() => navigate("/dashboard")} className="text-white text-sm duration-200 hover:text-[#e9e9e9] group flex gap-2">
             <span>Aloita Opiskelu</span>{" "}
             <img

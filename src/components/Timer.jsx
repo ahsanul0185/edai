@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
+import { twMerge } from "tailwind-merge";
 
-const Timer = ({ date }) => {
+const Timer = ({ date, className }) => {
   const [time, setTime] = useState(1);
   const timerId = useRef();
 
@@ -46,7 +47,7 @@ const Timer = ({ date }) => {
   };
 
   return (
-    <div className="fixed z-50 scale-75 sm:scale-100 py-3 px-2 md:px-3 top-[20%] lg:top-[30%] -right-7 sm:right-0 bg-gradient-to-r from-[#FFFFFF66] to-[#9999991A] backdrop-blur-md rounded-md">
+    <div className={twMerge(className)}>
 
       <div className="flex justify-center">
         {/* day */}

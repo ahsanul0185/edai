@@ -10,8 +10,11 @@ const Dashboard = () => {
       animate={{ opacity: 1 }}
       className="z-0 text-white font-poppins flex"
     >
+
       <Sidebar />
       <Main />
+     
+      
     </motion.div>
   );
 };

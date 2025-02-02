@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <motion.div initial={{opacity : 0}} animate={{opacity: 1}} className="z-0 text-white font-poppins">
       <Header />
-      <Timer date={date} />
+      <Timer date={date} className="fixed z-50 scale-75 sm:scale-100 py-3 px-2 md:px-3 top-[20%] lg:top-[30%] -right-7 sm:right-0 bg-gradient-to-r from-[#FFFFFF66] to-[#9999991A] backdrop-blur-md rounded-md"/>
       <Hero />
       <Taloustieto />
       <Valitse />
