@@ -1,7 +1,7 @@
 import React from "react";
-import logo_model from "../../assets/model-logo.svg";
-import logo_kauppatieteellinen from "../../assets/logo-kauppatieteellinen.png";
-import BoxSuurin from "../../components/BoxSuurin";
+import logo_model from "../assets/model-logo.svg";
+import logo_kauppatieteellinen from "../assets/logo-kauppatieteellinen.png";
+import BoxSuurin from "../components/BoxSuurin";
 import { motion } from "motion/react";
 
 const Suurin = () => {

@@ -1,9 +1,7 @@
 import React from "react";
-import Button from "../../components/Button";
+import Button from "../components/Button";
 
 const Hero = () => {
-
-
   return (
     <div
       className={`relative min-h-[70vh] md:min-h-screen md:bg-[url(/images/img_hero.jpg)] md:bg-fixed bg-no-repeat bg-cover bg-center flex items-end`}
@@ -35,7 +33,9 @@ const Hero = () => {
             opiskelupaikat valintakoekiintiössä.
           </p>
 
-          <Button className="mt-5 sm:mt-10" path="/dashboard">Aloita opiskelu heti</Button>
+          <Button className="mt-5 sm:mt-10" link="https://dashboard-edai.netlify.app/">
+            Aloita opiskelu heti
+          </Button>
         </div>
       </div>
     </div>

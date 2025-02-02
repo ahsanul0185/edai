@@ -1,16 +1,12 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 
 
-const Button = ({ className, children, isBordered, path = "" }) => {
-
-  const navigate = useNavigate();
-
+const Button = ({ className, children, isBordered, link = ""}) => {
 
   return (
     <button
-      onClick={() => navigate(path)}
+    onClick={() => window.location.href = link}
       className={twMerge(
         `flex items-center gap-3 px-4 sm:px-5 py-3 rounded-md ${isBordered ? "bg-transparent text-white border hover:text-black hover:bg-white" : "bg-white text-black hover:text-white hover:bg-[#343434]"} text-xs sm:text-base group   duration-300 font-medium`,
         className

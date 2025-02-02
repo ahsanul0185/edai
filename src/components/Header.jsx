@@ -2,12 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useMotionValueEvent, useScroll } from "motion/react";
 import logo from "../assets/logo.svg";
 import arrow_left from "../assets/arrow-left.svg";
-import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const { scrollY } = useScroll();
   const [isScrolled, setIsScrolled] = useState(false);
-  const navigate = useNavigate();
 
   useMotionValueEvent(scrollY, "change", (current) => {
     current > 10 ? setIsScrolled(true) : setIsScrolled(false);
@@ -23,14 +21,14 @@ const Header = () => {
     >
       {/* logo */}
       <div>
-        <img className="size-16 md:size-fit" src={logo} alt="edai" />
+        <img className="size-14 sm:size-16 md:size-fit" src={logo} alt="edai" />
       </div>
 
       {/* right buttons */}
       <div
         className="flex items-center gap-5"
       >
-          <button onClick={() => navigate("/dashboard")} className="text-white text-sm duration-200 hover:text-[#e9e9e9] group flex gap-2">
+          <button onClick={() => window.location.href = "https://dashboard-edai.netlify.app/"} className="text-white text-sm duration-200 hover:text-[#e9e9e9] group flex gap-2">
             <span>Aloita Opiskelu</span>{" "}
             <img
               src={arrow_left}

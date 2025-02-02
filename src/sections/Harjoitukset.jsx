@@ -1,6 +1,6 @@
 import React from "react";
 import bg_image from "/images/img_harjoitukset.jpg";
-import Button from "../../components/Button";
+import Button from "../components/Button";
 
 const Harjoitukset = () => {
   return (
@@ -25,7 +25,7 @@ const Harjoitukset = () => {
         </p>
 
         <Button
-          path="/dashboard"
+          link="https://dashboard-edai.netlify.app/"
           className="px-6 sm:px-10 py-2.5 mx-auto mt-5 sm:mt-7 md:mt-12"
           isBordered
         >
