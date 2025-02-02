@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Hero from "../sections/home/Hero";
 import Taloustieto from "../sections/home/Taloustieto";
@@ -9,13 +9,14 @@ import Tuki from "../sections/home/Tuki";
 import Footer from "../components/Footer";
 import Timer from "../components/Timer";
 
-const timerDays = 165;
-
 const Home = () => {
+
+  const date = "2025-04-06T09:00:00Z"; // set UTC time here
+
   return (
     <div className="z-0 text-white font-poppins">
       <Header />
-      <Timer duration={timerDays} />
+      <Timer date={date} />
       <Hero />
       <Taloustieto />
       <Valitse />

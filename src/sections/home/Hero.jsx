@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/50" />
 
       {/* hero content */}
-      <div className="z-10 section-padding mb-8 sm:mb-12 md:mb-28">
+      <div className="z-10 section-padding mb-8 sm:mb-12 lg:mb-28">
         <div className="max-w-3xl">
           <h2 className="absolute top-[5rem] sm:top-24 left-1/2 -translate-x-1/2 sm:-translate-x-0 w-[80%] sm:max-w-full text-center sm:text-left sm:static sm:text-xl md:text-2xl font-bold mb-8">
             Ilmainen kauppatieteet valmennuskurssi

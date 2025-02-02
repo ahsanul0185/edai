@@ -6,11 +6,11 @@ import { BrowserRouter } from "react-router-dom";
 import SmoothScroll from "./utils/SmoothScroll.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
+  // <StrictMode>
     <BrowserRouter>
       <SmoothScroll>
         <App />
       </SmoothScroll>
     </BrowserRouter>
-  </StrictMode>
+  // </StrictMode>
 );

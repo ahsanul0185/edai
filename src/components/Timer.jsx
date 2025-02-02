@@ -1,23 +1,37 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const Timer = ({ duration }) => {
-  const [time, setTime] = useState(duration * 24 * 60 * 60 * 1000);
+const Timer = ({ date }) => {
+  const [time, setTime] = useState(1);
   const timerId = useRef();
 
+
+// getting total milliseconds
+  useEffect(() => {
+    const targetDate = new Date(date);
+    const now = new Date();
+    const differenceInSeconds = Math.floor((targetDate - now) / 1000);
+    setTime(differenceInSeconds * 1000);
+  }, []);
+
+
+  // countdown
   useEffect(() => {
     if (time <= 0) return;
 
     timerId.current = setInterval(() => {
       setTime((prev) => prev - 1000);
+
     }, 1000);
 
     return () => clearInterval(timerId.current);
   }, []);
 
+// stop countdown 
   useEffect(() => {
     if (time <= 0) clearInterval(timerId.current);
   }, [time]);
 
+  // format time
   const getFormattedTime = (milliseconds) => {
     let total_seconds = parseInt(Math.floor(milliseconds / 1000));
     let total_minutes = parseInt(Math.floor(total_seconds / 60));
