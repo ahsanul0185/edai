@@ -8,7 +8,7 @@ const Sidebar = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-[#161616] h-screen min-w-[320px] py-10 px-8">
+    <div className="absolute left-0 md:static bg-[#161616] h-screen min-w-[240px] lg:min-w-[320px] py-10 px-8 duration-300 -translate-x-full md:translate-x-0">
       <div className="h-full flex flex-col justify-between ">
         <img className="w-14 mx-auto" src={logo} alt="" />
 
