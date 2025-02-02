@@ -75,7 +75,7 @@ const Timer = ({ duration }) => {
         </div>
 
         {/* minutes */}
-        <div className="w-[50px] md:w-[60px]">
+        <div className="w-[50px] md:w-[60px] lg:w-[70px]">
           <p className="text-xl md:text-2xl lg:text-3xl border-r px-3 lg:px-4 text-center">
             {getFormattedTime(time).minutes < 10
               ? "0" + getFormattedTime(time).minutes
