@@ -26,10 +26,7 @@ const Header = () => {
 
       {/* right buttons */}
       <div className="flex items-center gap-5">
-        <button className="text-white text-sm duration-200 hover:text-[#e9e9e9]">Aloita Opiskelu</button>
-        <button className="duration-200 hover:opacity-85">
-          <img src={icon_logout} alt="logout icon" />
-        </button>
+        <button className="text-white text-sm duration-200 hover:text-[#e9e9e9] group flex gap-2"><span>Aloita Opiskelu</span> <img src={icon_logout} className="group-hover:opacity-85 duration-200" alt="logout icon" /></button>
       </div>
     </div>
   );

@@ -1,18 +1,20 @@
 import React from "react";
-import Button from "../components/Button";
+import Button from "../../components/Button";
 
 const Hero = () => {
   return (
     <div
       // style={{backgroundImage : `url(/images/img_hero.jpg)`}}
-      className={`relative min-h-[70vh] md:min-h-screen sm:bg-[url(/images/img_hero.jpg)] md:bg-fixed bg-no-repeat bg-cover bg-center flex items-end`}
+      className={`relative min-h-[70vh] md:min-h-screen md:bg-[url(/images/img_hero.jpg)] md:bg-fixed bg-no-repeat bg-cover bg-center flex items-end`}
     >
       {/* dark overlay */}
-      <div className="sm:hidden absolute inset-0 overflow-x-hidden">
-      <img src="/images/img_hero.jpg" className="block h-full min-w-fit -translate-x-[40%]" />
+      <div className="md:hidden absolute inset-0 overflow-x-hidden">
+        <img
+          src="/images/img_hero.jpg"
+          className="block h-full min-w-fit -translate-x-[40%] object-fit"
+        />
       </div>
       <div className="absolute inset-0 bg-black/50" />
-
 
       {/* hero content */}
       <div className="z-10 section-padding mb-8 sm:mb-12 md:mb-28">
@@ -21,8 +23,7 @@ const Hero = () => {
             Ilmainen kauppatieteet valmennuskurssi
           </h2>
           <h2 className="text-sm sm:text-xl md:text-2xl font-bold">
-            91 %
-            Aalto-yliopiston kauppakorkeakouluun valintakokeella valituista
+            91 % Aalto-yliopiston kauppakorkeakouluun valintakokeella valituista
             opiskelijoista kävi EDAI valmennuksen kurssin.
           </h2>
 

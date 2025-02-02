@@ -33,23 +33,6 @@ const Timer = ({ duration }) => {
 
   return (
     <div className="fixed z-50 scale-75 sm:scale-100 py-3 px-2 md:px-3 top-[20%] lg:top-[30%] -right-7 sm:right-0 bg-gradient-to-r from-[#FFFFFF66] to-[#9999991A] backdrop-blur-md rounded-md">
-      <span className="hidden">
-        {getFormattedTime(time).days < 9
-          ? "0" + getFormattedTime(time).days
-          : getFormattedTime(time).days}{" "}
-        :
-        {getFormattedTime(time).hours < 9
-          ? "0" + getFormattedTime(time).hours
-          : getFormattedTime(time).hours}{" "}
-        :
-        {getFormattedTime(time).minutes < 9
-          ? "0" + getFormattedTime(time).minutes
-          : getFormattedTime(time).minutes}{" "}
-        :
-        {getFormattedTime(time).seconds < 9
-          ? "0" + getFormattedTime(time).seconds
-          : getFormattedTime(time).seconds}{" "}
-      </span>
 
       <div className="flex justify-center">
         {/* day */}

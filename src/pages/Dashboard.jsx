@@ -1,8 +1,13 @@
 import React from 'react'
+import Sidebar from '../sections/dashboard/Sidebar'
+import Main from '../sections/dashboard/Main'
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <div className="z-0 text-white font-poppins flex">
+      <Sidebar />
+      <Main />
+    </div>
   )
 }
 

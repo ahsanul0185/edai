@@ -1,7 +1,7 @@
 import React from "react";
-import logo_model from "../assets/model-logo.svg";
-import logo_kauppatieteellinen from "../assets/logo-kauppatieteellinen.png";
-import BoxSuurin from "../components/BoxSuurin";
+import logo_model from "../../assets/model-logo.svg";
+import logo_kauppatieteellinen from "../../assets/logo-kauppatieteellinen.png";
+import BoxSuurin from "../../components/BoxSuurin";
 import { motion } from "motion/react";
 
 const Suurin = () => {
@@ -12,8 +12,9 @@ const Suurin = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.4, ease: "easeIn" }}
-        viewport={{once : true, amount : 0.3}}
-        className="max-w-[1350px] mx-auto section-padding">
+        viewport={{ once: true, amount: 0.3 }}
+        className="max-w-[1350px] mx-auto section-padding"
+      >
         <h2 className="sm:text-xl md:text-2xl font-bold mb-2">
           Suurin osa hakijoista osallistuu edelleen valintakokeeseen
         </h2>
@@ -43,7 +44,11 @@ const Suurin = () => {
       <div className="mx-auto mt-16 md:mt-28 section-padding flex flex-col items-center lg:items-stretch lg:flex-row lg:justify-center gap-12">
         <BoxSuurin bg_img="/images/box_1.jpg" idx={0}>
           <div>
-            <img className="block w-12 sm:w-16 mb-7 sm:mb-10 mt-2" src={logo_model} alt="" />
+            <img
+              className="block w-12 sm:w-16 mb-7 sm:mb-10 mt-2"
+              src={logo_model}
+              alt=""
+            />
 
             <h2 className="lg:text-xl xl:text-2xl font-semibold mb-4 tracking-wide">
               Valmistaudu kauppakorkeakoulun pääsykokeisiin räätälöityä tuen
