@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed w-full top-0 left-0 z-[999] flex justify-between items-center duration-300 section-padding sm:py-6 ${
+      className={`fixed w-full top-0 left-0 z-[999] flex justify-between items-center duration-300 section-padding md:py-6 ${
         isScrolled
           ? "from-[#D9D9D966 ] to-[#7373731A ] bg-white/15 backdrop-blur-xl translate-y-0"
           : "from-[#606060 ] to- [#1a1a1a] backdrop-blur-0"
