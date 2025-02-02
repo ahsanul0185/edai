@@ -1,14 +1,19 @@
-import React from 'react'
-import Sidebar from '../sections/dashboard/Sidebar'
-import Main from '../sections/dashboard/Main'
+import React from "react";
+import Sidebar from "../sections/dashboard/Sidebar";
+import Main from "../sections/dashboard/Main";
+import { motion } from "motion/react";
 
 const Dashboard = () => {
   return (
-    <div className="z-0 text-white font-poppins flex">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="z-0 text-white font-poppins flex"
+    >
       <Sidebar />
       <Main />
-    </div>
-  )
-}
+    </motion.div>
+  );
+};
 
-export default Dashboard
+export default Dashboard;

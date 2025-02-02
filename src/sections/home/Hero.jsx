@@ -2,6 +2,8 @@ import React from "react";
 import Button from "../../components/Button";
 
 const Hero = () => {
+
+
   return (
     <div
       // style={{backgroundImage : `url(/images/img_hero.jpg)`}}
@@ -34,7 +36,7 @@ const Hero = () => {
             opiskelupaikat valintakoekiintiössä.
           </p>
 
-          <Button className="mt-5 sm:mt-10">Aloita opiskelu heti</Button>
+          <Button className="mt-5 sm:mt-10" path="/dashboard">Aloita opiskelu heti</Button>
         </div>
       </div>
     </div>

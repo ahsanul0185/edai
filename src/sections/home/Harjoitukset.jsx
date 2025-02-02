@@ -25,6 +25,7 @@ const Harjoitukset = () => {
         </p>
 
         <Button
+          path="/dashboard"
           className="px-6 sm:px-10 py-2.5 mx-auto mt-5 sm:mt-7 md:mt-12"
           isBordered
         >

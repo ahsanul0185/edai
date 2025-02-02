@@ -8,13 +8,14 @@ import Harjoitukset from "../sections/home/Harjoitukset";
 import Tuki from "../sections/home/Tuki";
 import Footer from "../components/Footer";
 import Timer from "../components/Timer";
+import { motion } from "motion/react";
 
 const Home = () => {
 
   const date = "2025-04-06T09:00:00Z"; // set UTC time here
 
   return (
-    <div className="z-0 text-white font-poppins">
+    <motion.div initial={{opacity : 0}} animate={{opacity: 1}} className="z-0 text-white font-poppins">
       <Header />
       <Timer date={date} />
       <Hero />
@@ -24,7 +25,7 @@ const Home = () => {
       <Harjoitukset />
       <Tuki />
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 
