@@ -11,7 +11,7 @@ import Timer from "../components/Timer";
 import { motion } from "motion/react";
 
 const Home = () => {
-  const date = "2025-04-06T09:00:00Z"; // set UTC time here
+  const date = "2025-06-04T09:00:00Z"; // set UTC time here
 
   return (
     <motion.div
